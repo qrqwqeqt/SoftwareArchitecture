@@ -18,6 +18,7 @@ func main() {
 		currentTime := time.Now().Format(time.RFC3339)
 		response := TimeResponse{Time: currentTime}
 		jsonResponse, err := json.Marshal(response)
+		//Перевірка на помилку
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
