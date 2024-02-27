@@ -13,6 +13,7 @@ type TimeResponse struct {
 }
 
 func main() {
+	//Встановлює обробник запитів для шляху "/time"
 	http.HandleFunc("/time", func(w http.ResponseWriter, r *http.Request) {
 		currentTime := time.Now().Format(time.RFC3339)
 		response := TimeResponse{Time: currentTime}
