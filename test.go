@@ -29,7 +29,7 @@ func main() {
 		w.Write(jsonResponse)
 	})
 	//виведення адреси у консоль
-	fmt.Println("Сервер запущено на http://localhost:8795")
+	fmt.Println("Сервер запущено на http://localhost:8795/time")
 	//старт сервера
 	http.ListenAndServe(":8795", nil)
 }
