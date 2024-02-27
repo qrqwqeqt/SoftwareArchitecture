@@ -32,5 +32,4 @@ func main() {
 	fmt.Println("Сервер запущено на http://localhost:8795")
 	//старт сервера
 	http.ListenAndServe(":8795", nil)
-
 }
