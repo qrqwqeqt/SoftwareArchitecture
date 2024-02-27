@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-// Коментарі
+//Коментарі
 
 type TimeResponse struct {
 	Time string `json:"time"`
